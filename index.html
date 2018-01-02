@@ -300,16 +300,16 @@
       
         
           
-            <p>  ·创建一个空文件夹，”git init”  初始化仓库； </p>
-<p>  ·文件夹中创建一个文本文件（如：zhi.txt)：”git add zhi.txt” 将文件添加到git  仓库的缓存区；<br>  (说明：git add 命令是将内容添加至缓存区，即可以添加多个文件，然后使用git commit命令 将多个文件同时提交)</p>
-<p>  ·” git commit –m “对提交文件的说明” “:<br>  (简单解释一下git commit命令，-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。-廖雪峰)</p>
-<p>  ·”git log” 查看日志(更多git log内容：<a href="https://www.cnblogs.com/irocker/p/git-log.html）" target="_blank" rel="noopener">https://www.cnblogs.com/irocker/p/git-log.html）</a><br>  ($ git log<br>   commit d95e902addd95e164bfd172fb327fe6a3705bc75 (HEAD -&gt; master)<br>   Author: xxx <xxxxx><br>   Date:   Tue Dec 26 08:54:34 2017 +0800<br>    xiugai<br>   commit 7f0732172eac887d6aefc8bb359190589b5868b8<br>   Author: xxx <xxxxx><br>   Date:   Tue Dec 26 08:31:44 2017 +0800<br>    yanshi<br>日志呈倒叙，即最近修改的在上；)</xxxxx></xxxxx></p>
-<p>  ·”git reflog” 可以查看所有的commit 的日志:<br>  ($ git reflog<br>   d95e902 (HEAD -&gt; master) HEAD@{0}: commit: xiugai<br>   7f07321 HEAD@{1}: commit (initial): yanshi      )</p>
-<p>  ·修改文件（zhi.txt）后，”git diff”/“git diff zhi.txt” 可以查看修改内容:<br>  ($ git diff<br>   diff –git a/zhi.txt b/zhi.txt<br>   index 99e0e11..db27b31 100644<br>   — a/zhi.txt<br>   +++ b/zhi.txt<br>   @@ -1,2 +1,3 @@<br>   Git is a distributed version control system.<br>   -Git is free software distributed under the GPL.<br>   \ No newline at end of file<br>   +Git is free software distributed under the GPL.<br>   +i like git<br>   \ No newline at end of file  )</p>
-<p>  ·”git status”命令可以查看仓库当前的状态<br>  ($ git status<br>  On branch master                                                                   //master分支<br>  Changes not staged for commit:                                                     //未提交的更改：<br>  (use “git add <file>…” to update what will be committed)                         //（使用Git添加&lt;文件&gt;……）更新所提交的内容）<br>  (use “git checkout – <file>…” to discard changes in working directory)          //（使用Git结帐- &lt;文件&gt;……）删除工作目录中的更改） </file></file></p>
+            <p>·创建一个空文件夹，”git init”  初始化仓库； </p>
+<p>·文件夹中创建一个文本文件（如：zhi.txt)：”git add zhi.txt” 将文件添加到git  仓库的缓存区；<br>  (说明：git add 命令是将内容添加至缓存区，即可以添加多个文件，然后使用git commit命令 将多个文件同时提交)</p>
+<p>·” git commit –m “对提交文件的说明” “:<br>  (简单解释一下git commit命令，-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。-廖雪峰)</p>
+<p>·”git log” 查看日志(更多git log内容：<a href="https://www.cnblogs.com/irocker/p/git-log.html）" target="_blank" rel="noopener">https://www.cnblogs.com/irocker/p/git-log.html）</a><br>  ($ git log<br>   commit d95e902addd95e164bfd172fb327fe6a3705bc75 (HEAD -&gt; master)<br>   Author: xxx <xxxxx><br>   Date:   Tue Dec 26 08:54:34 2017 +0800<br>    xiugai<br>   commit 7f0732172eac887d6aefc8bb359190589b5868b8<br>   Author: xxx <xxxxx><br>   Date:   Tue Dec 26 08:31:44 2017 +0800<br>    yanshi<br>日志呈倒叙，即最近修改的在上；)</xxxxx></xxxxx></p>
+<p>·”git reflog” 可以查看所有的commit 的日志:<br>  ($ git reflog<br>   d95e902 (HEAD -&gt; master) HEAD@{0}: commit: xiugai<br>   7f07321 HEAD@{1}: commit (initial): yanshi      )</p>
+<p>·修改文件（zhi.txt）后，”git diff”/“git diff zhi.txt” 可以查看修改内容:<br>  ($ git diff<br>   diff –git a/zhi.txt b/zhi.txt<br>   index 99e0e11..db27b31 100644<br>   — a/zhi.txt<br>   +++ b/zhi.txt<br>   @@ -1,2 +1,3 @@<br>   Git is a distributed version control system.<br>   -Git is free software distributed under the GPL.<br>   \ No newline at end of file<br>   +Git is free software distributed under the GPL.<br>   +i like git<br>   \ No newline at end of file  )</p>
+<p>·”git status”命令可以查看仓库当前的状态<br>  ($ git status<br>  On branch master                                                                   //master分支<br>  Changes not staged for commit:                                                     //未提交的更改：<br>  (use “git add <file>…” to update what will be committed)                         //（使用Git添加&lt;文件&gt;……）更新所提交的内容）<br>  (use “git checkout – <file>…” to discard changes in working directory)          //（使用Git结帐- &lt;文件&gt;……）删除工作目录中的更改） </file></file></p>
 <pre><code>modified:   zhi.txt                                                          //修改：zhi.txt
 </code></pre><p>  no changes added to commit (use “git add” and/or “git commit -a”)   )              //没有更改添加到提交（使用“Git添加”和/或“Git提交- A”） </p>
-<p>  ·版本回退 命令” git reset –hard HEAD^ “(“^”的个数代表回退版本数：上一个版本就是HEAD^，上上一个版本就是HEAD^^）</p>
+<p>·版本回退 命令” git reset –hard HEAD^ “(“^”的个数代表回退版本数：上一个版本就是HEAD^，上上一个版本就是HEAD^^）</p>
 <p>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·<br>  ·</p>
 <p>Initialized：已初始化的<br>insertions： 插入<br>deletions：  缺失；删除<br>modified：   改良的，改进的，修正的;<br>         v.  修改，更改( modify的过去式和过去分词 );改变;修饰;缓和; </p>
 <p>简单hexo使用：<br>新建博客：hexo new post “  名字  “<br>博客生成及部署： hexo g;hexo d /hexo d -g</p>
